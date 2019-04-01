@@ -146,7 +146,7 @@ def sett(cands):
 parseData()
 
 # Some bookkeeping for kNN
-k = 9 #1 5 9 15
+k = 1 #5 9 15
 e = 0
 start = t.time()
 
@@ -163,14 +163,12 @@ for i in range(len(projtests)):
   #nbs = kNN(testd_vs[i], k)
   nbs = kNN_pj(projtests[i], k)
   prd = sett(nbs)
-  print("e: ", e)
   
   if prd != tru:
-    print("tru: ", tru)
-    print("prd: ", prd)
-    print ("ERROR!!!")
+    #print("tru: ", tru)
+    #print("prd: ", prd)
+    #print ("ERROR!!!")
     e += 1
-    print ("e: ", e)
 
 end = t.time()
 print("errors: ", e)
