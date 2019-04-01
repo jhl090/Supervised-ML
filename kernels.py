@@ -172,9 +172,12 @@ manageData()
 start = t.time()
 p = 5
 w = kernelPtron(p)
+
 #print("w:", w)
 #print(w)
-#getExtrema(w, p)
+
+getExtrema(w, p)
 kernErr(w, p)
+
 end = t.time()
 print("Time elapsed: ", end - start)
