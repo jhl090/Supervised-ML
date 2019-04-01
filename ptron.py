@@ -369,7 +369,6 @@ def ovaReduce():
 #*******************#   MAIN CHUNK   #*******************#
 manageData()
 
-'''
 ### Test regular perceptron
 hypl = simplePtron(sub_train_ds, 1)
 sp_err = spError(hypl, sub_train_ds)
@@ -387,7 +386,6 @@ print("ap_err: ", ap_err)
 
 ### Find strongest words that indicate (+)/(-) class
 getExtrema(m, cfier)
-'''
 
 ### Test o.v.a. multiclass classifier
 ovaReduce()
